@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DFL 2026 Mobile - Oficial</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        .animate-marquee {
+            display: flex;
+            animation: marquee 8s linear infinite;
+            width: max-content;
+        }
+
+        .btn-bounce {
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .btn-bounce:hover {
+            transform: scale(1.05) translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 200, 83, 0.2);
+        }
+
+        .btn-bounce:active {
+            transform: scale(0.95);
+        }
+
+        .ticker-span {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #777;
+            font-size: 13px;
+            margin-right: 40px;
+        }
+
+        .feature-card {
+            background-color: #0a0a0a;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            border-color: #00C853;
+            background-color: #0f0f0f;
+        }
+
+        /* Hide scrollbar */
+        ::-webkit-scrollbar { width: 0px; }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header class="pt-12 pb-16 px-6 text-center">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-[10px] font-black uppercase tracking-[0.2em] mb-8">
+            Lanzamiento 2026 🔥
+        </div>
+
+        <h1 class="text-[44px] leading-[0.9] font-black mb-4 tracking-tighter">
+            EL NUEVO DFL <br>
+            <span class="text-white">2026</span> <br>
+            <span class="text-[#00C853] italic uppercase">EN TU CELU</span>
+        </h1>
+
+        <p class="text-[#888] text-sm max-w-[280px] mx-auto mb-8 font-medium leading-relaxed">
+            ¿Cansado de los links truchos y los acortadores que no sirven para un carajo? Bajate el juego más actualizado hoy mismo.
+        </p>
+
+        <a href="#oferta" class="btn-bounce w-full flex items-center justify-center gap-2 bg-[#00C853] text-black font-black py-4 px-8 rounded-2xl text-lg mb-4 shadow-xl">
+            VER OFERTA YA MISMO
+            <i data-lucide="download" class="w-5 h-5 ml-2"></i>
+        </a>
+
+        <p class="text-[10px] font-bold text-[#444] uppercase tracking-tight mb-8">
+            Pagá en tu moneda local sin dramas: se convierte solo al toque. <br>
+            Es 100% seguro y confiable, no te hagas mala sangre.
+        </p>
+
+        <div class="flex justify-center gap-6 text-[11px] font-bold text-[#444] tracking-tight uppercase">
+            <div class="flex items-center gap-1.5">
+                <i data-lucide="shield-check" class="w-4 h-4 text-[#00C853]"></i>
+                Acceso Vitalicio
+            </div>
+            <div class="flex items-center gap-1.5">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-[#00C853]"></i>
+                Sin Anuncios
+            </div>
+        </div>
+    </header>
+
+    <!-- Ticker -->
+    <div class="bg-[#111] border-y border-white/5 py-4 overflow-hidden whitespace-nowrap">
+        <div class="animate-marquee">
+            <!-- Repeat enough times for a clean loop -->
+            <div class="flex">
+                <span class="ticker-span"><i data-lucide="star" class="w-4 h-4 text-[#00C853] fill-[#00C853]"></i> DOWNLOADS</span>
+                <span class="ticker-span"><i data-lucide="star" class="w-4 h-4 text-[#00C853] fill-[#00C853]"></i> 100% ACTUALIZADO</span>
+                <span class="ticker-span"><i data-lucide="star" class="w-4 h-4 text-[#00C853] fill-[#00C853]"></i> SIN VUELTAS</span>
+                <span class="ticker-span"><i data-lucide="star" class="w-4 h-4 text-[#00C853] fill-[#00C853]"></i> DOWNLOADS</span>
+                <span class="ticker-span"><i data-lucide="star" class="w-4 h-4 text-[#00C853] fill-[#00C853]"></i> 100% ACTUALIZADO</span>
+                <span class="ticker-span"><i data-lucide="star" class="w-4 h-4 text-[#00C853] fill-[#00C853]"></i> SIN VUELTAS</span>
+                <span class="ticker-span"><i data-lucide="star" class="w-4 h-4 text-[#00C853] fill-[#00C853]"></i> DOWNLOADS</span>
+                <span class="ticker-span"><i data-lucide="star" class="w-4 h-4 text-[#00C853] fill-[#00C853]"></i> 100% ACTUALIZADO</span>
+                <span class="ticker-span"><i data-lucide="star" class="w-4 h-4 text-[#00C853] fill-[#00C853]"></i> SIN VUELTAS</span>
+            </div>
+            <div class="flex">
+                <span class="ticker-span"><i data-lucide="star" class="w-4 h-4 text-[#00C853] fill-[#00C853]"></i> DOWNLOADS</span>
+                <span class="ticker-span"><i data-lucide="star" class="w-4 h-4 text-[#00C853] fill-[#00C853]"></i> 100% ACTUALIZADO</span>
+                <span class="ticker-span"><i data-lucide="star" class="w-4 h-4 text-[#00C853] fill-[#00C853]"></i> SIN VUELTAS</span>
+                <span class="ticker-span"><i data-lucide="star" class="w-4 h-4 text-[#00C853] fill-[#00C853]"></i> DOWNLOADS</span>
+                <span class="ticker-span"><i data-lucide="star" class="w-4 h-4 text-[#00C853] fill-[#00C853]"></i> 100% ACTUALIZADO</span>
+                <span class="ticker-span"><i data-lucide="star" class="w-4 h-4 text-[#00C853] fill-[#00C853]"></i> SIN VUELTAS</span>
+                <span class="ticker-span"><i data-lucide="star" class="w-4 h-4 text-[#00C853] fill-[#00C853]"></i> DOWNLOADS</span>
+                <span class="ticker-span"><i data-lucide="star" class="w-4 h-4 text-[#00C853] fill-[#00C853]"></i> 100% ACTUALIZADO</span>
+                <span class="ticker-span"><i data-lucide="star" class="w-4 h-4 text-[#00C853] fill-[#00C853]"></i> SIN VUELTAS</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Benefits -->
+    <section class="py-20 px-6">
+        <h2 class="text-3xl font-black text-white text-center mb-4 tracking-tighter uppercase italic leading-[0.9]">
+            ¿QUÉ TE LLEVÁS, <br> CAPO?
+        </h2>
+        <p class="text-[#555] text-center text-xs mb-12 font-medium">Todo lo que necesitás para viciar fuerte al fútbol en el móvil.</p>
+
+        <div class="space-y-4">
+            <div class="feature-card p-8 rounded-3xl group">
+                <div class="bg-[#151515] w-12 h-12 rounded-xl flex items-center justify-center mb-6">
+                    <i data-lucide="trophy" class="text-[#00C853] w-5 h-5"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2 tracking-tight uppercase">Brasileirão 2026</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">Serie A y B totalmente actualizadas con los planteles nuevos.</p>
+            </div>
+            <div class="feature-card p-8 rounded-3xl group">
+                <div class="bg-[#151515] w-12 h-12 rounded-xl flex items-center justify-center mb-6">
+                    <i data-lucide="users" class="text-[#00C853] w-5 h-5"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2 tracking-tight uppercase">Kits Oficiales</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">Uniformes de la temporada 2026 de todos los clubes del mundo.</p>
+            </div>
+            <div class="feature-card p-8 rounded-3xl group">
+                <div class="bg-[#151515] w-12 h-12 rounded-xl flex items-center justify-center mb-6">
+                    <i data-lucide="smartphone" class="text-[#00C853] w-5 h-5"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2 tracking-tight uppercase">Cualquier Android</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">Corre joya desde Android 5 hasta el 16 sin que se te tilde nada.</p>
+            </div>
+            <div class="feature-card p-8 rounded-3xl group">
+                <div class="bg-[#151515] w-12 h-12 rounded-xl flex items-center justify-center mb-6">
+                    <i data-lucide="message-square" class="text-[#00C853] w-5 h-5"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2 tracking-tight uppercase">Relatos en BR</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">Sentí la emoción con la narración profesional integrada.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mid Green Section -->
+    <section class="bg-[#00C853] py-20 px-6 text-black">
+        <div class="text-center">
+            <h2 class="text-[38px] leading-[0.85] font-black italic tracking-tighter mb-8 uppercase">
+                ¡DÉJATE DE JODER <br> CON LINKS QUE <br> NO ANDAN!
+            </h2>
+            
+            <div class="space-y-6 mb-12 font-bold leading-tight">
+                <p>Escuchame bien, che: ¿Ya intentaste bajar el DFL en otros lados y te comiste un virus, o te saltó un anuncio infinito o error en la carpeta data?</p>
+                <p>Nosotros te lo resolvemos. Por solo <span class="underline decoration-4">$ 1.00</span> (menos de lo que sale un alfajor), te llevas el link directo, sin vueltas y con tutorial simplificado.</p>
+                <p class="text-black font-black uppercase tracking-tight">¡Es bajarlo, instalarlo y salir a la cancha con tu equipo favorito re actualizado!</p>
+            </div>
+
+            <a href="#oferta" class="btn-bounce w-full flex flex-col items-center justify-center bg-black text-white py-6 rounded-3xl group mb-4">
+                <span class="text-xl font-black uppercase tracking-tight group-hover:text-[#00C853] transition-colors">VER OFERTA ESPECIAL</span>
+                <span class="text-2xl mt-1">🚀</span>
+            </a>
+
+            <p class="text-[10px] font-black uppercase tracking-tight opacity-70 italic">
+                Pagá con tu moneda local sin problemas. Se convierte automáticamente a dólares. <br>
+                ¡Pago 100% seguro y confiable!
+            </p>
+        </div>
+    </section>
+
+    <!-- Offer Box -->
+    <section id="oferta" class="py-24 px-6">
+        <div class="border border-emerald-500/30 rounded-[2.5rem] p-10 relative overflow-hidden bg-black">
+            <h2 class="text-[32px] leading-[0.9] font-black text-center mb-10 tracking-tighter italic grayscale opacity-90">
+                OFERTA EXCLUSIVA <br>
+                <span class="text-[#00C853]">DFL 2026 MOBILE</span>
+            </h2>
+
+            <div class="space-y-4 mb-12">
+                <h3 class="text-white font-black text-sm uppercase tracking-widest mb-4">¿QUÉ TE LLEVÁS?</h3>
+                <div class="flex items-center gap-3 text-[#777] font-bold text-sm"><i data-lucide="check-circle-2" class="w-5 h-5 text-[#00C853]"></i> Enlace Directo (Sin Acortadores)</div>
+                <div class="flex items-center gap-3 text-[#777] font-bold text-sm"><i data-lucide="check-circle-2" class="w-5 h-5 text-[#00C853]"></i> Tutorial Paso a Paso (Vídeo)</div>
+                <div class="flex items-center gap-3 text-[#777] font-bold text-sm"><i data-lucide="check-circle-2" class="w-5 h-5 text-[#00C853]"></i> APK + DATA + OBB (Gordo Completo)</div>
+                <div class="flex items-center gap-3 text-[#777] font-bold text-sm"><i data-lucide="check-circle-2" class="w-5 h-5 text-[#00C853]"></i> Equipos Serie A y B Actualizados</div>
+                <div class="flex items-center gap-3 text-[#777] font-bold text-sm"><i data-lucide="check-circle-2" class="w-5 h-5 text-[#00C853]"></i> Kits y Uniformes 2026</div>
+                <div class="flex items-center gap-3 text-[#777] font-bold text-sm"><i data-lucide="check-circle-2" class="w-5 h-5 text-[#00C853]"></i> Relatos Profesionales</div>
+                <div class="flex items-center gap-3 text-[#777] font-bold text-sm"><i data-lucide="check-circle-2" class="w-5 h-5 text-[#00C853]"></i> Soporte vía Comentarios</div>
+            </div>
+
+            <div class="bg-[#080808] border border-white/5 rounded-3xl p-8 text-center">
+                <p class="text-[#444] text-xs font-bold line-through mb-4 uppercase tracking-widest">De $ 5.90</p>
+                <div class="flex items-center justify-center gap-1 mb-8">
+                    <span class="text-[#00C853] font-black text-xl self-start mt-2">$</span>
+                    <span class="text-white font-black text-[72px] leading-none tracking-tighter" id="final-price">1.00</span>
+                </div>
+                <p class="text-[#555] text-[10px] font-black uppercase tracking-widest mb-8">Pago único. Acceso vitalicio.</p>
+
+                <a href="https://pay.lowify.com.br/checkout.php?product_id=LP8frW" class="btn-bounce inline-flex w-full bg-[#00C853] text-black font-black py-5 rounded-2xl text-xl mb-4 tracking-tighter uppercase items-center justify-center text-center">
+                    COMPRAR AHORA
+                </a>
+
+                <p class="text-[10px] font-black text-[#666] uppercase tracking-tighter mb-6 leading-tight italic">
+                    Podés pagar con tu moneda local y se convierte solo. <br>
+                    No te preocupes por el dólar. Pago seguro y confiable.
+                </p>
+
+                <div class="flex justify-center gap-2 opacity-30 grayscale invert">
+                    <span class="text-[10px] font-black">PIX</span>
+                    <span class="text-[10px] font-black">VISA</span>
+                    <span class="text-[10px] font-black">MASTERCARD</span>
+                </div>
+            </div>
+
+            <div class="mt-8 flex justify-center items-center gap-2 text-[10px] font-black text-[#333] uppercase text-center px-4 leading-tight">
+                <i data-lucide="lock" class="w-3 h-3 text-[#00C853]/50"></i>
+                Compra 100% segura y entrega inmediata
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 px-6">
+        <h2 class="text-[34px] leading-[0.9] font-black text-center mb-4 tracking-tighter uppercase italic">
+            LOS QUE LO TIENEN <br> ESTÁN RE MANIJA
+        </h2>
+        <p class="text-[#555] text-center text-xs mb-12 font-medium">Mirá lo que dicen los pibes del NUEVO DFL 2026.</p>
+
+        <div class="space-y-4">
+            <div class="bg-[#0a0a0a] border border-white/5 p-8 rounded-[2rem]">
+                <div class="flex gap-1 mb-4 text-[#00C853]">★ ★ ★ ★ ★</div>
+                <p class="text-white text-lg font-medium leading-[1.3] italic mb-8">"Juego muy bueno, muy bien actualizado... ¡10000% aprobado! ❤️ mejor de lo que esperaba."</p>
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-[#00C853] flex items-center justify-center text-black font-black">D</div>
+                    <span class="text-white font-black text-sm tracking-tight">Davizz.RP7</span>
+                </div>
+            </div>
+            <div class="bg-[#0a0a0a] border border-white/5 p-8 rounded-[2rem]">
+                <div class="flex gap-1 mb-4 text-[#00C853]">★ ★ ★ ★ ★</div>
+                <p class="text-white text-lg font-medium leading-[1.3] italic mb-8">"Oye, funcionó perfecto, muchas gracias. Mi sueño era jugar este juegazo en mi móvil y ahora puedo disfrutarlo 😊"</p>
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center text-black font-black">S</div>
+                    <span class="text-white font-black text-sm tracking-tight">SEP.EDITSS</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-20 px-6">
+        <h2 class="text-[34px] leading-[0.9] font-black mb-12 tracking-tighter uppercase italic text-center">
+            DUDAS <br> FRECUENTES
+        </h2>
+        
+        <div class="bg-[#0a0a0a] border border-white/5 p-6 rounded-3xl mb-4">
+            <div class="flex items-center gap-3 mb-3">
+                <i data-lucide="smartphone" class="text-[#00C853] w-4 h-4"></i>
+                <h3 class="text-white font-black text-lg uppercase tracking-tight">¿Funciona en mi celu?</h3>
+            </div>
+            <p class="text-gray-500 text-sm leading-relaxed">¡De una! El juego está hecho para correr en cualquier Android, desde los más viejos hasta los nuevos 14, 15 y 16.</p>
+        </div>
+        <div class="bg-[#0a0a0a] border border-white/5 p-6 rounded-3xl mb-4">
+            <div class="flex items-center gap-3 mb-3">
+                <i data-lucide="shield-check" class="text-[#00C853] w-4 h-4"></i>
+                <h3 class="text-white font-black text-lg uppercase tracking-tight">¿Es seguro, che?</h3>
+            </div>
+            <p class="text-gray-500 text-sm leading-relaxed">100% posta. El archivo está limpito y libre de cualquier virus o anuncio molesto.</p>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-24 px-6 text-center">
+        <h2 class="text-[44px] leading-[0.85] font-black mb-8 tracking-tighter uppercase italic text-center">
+            NO SEAS COLGADO <br>
+            <span class="text-[#00C853]">OFERTA POR <br> TIEMPO LIMITADO</span>
+        </h2>
+        <p class="text-[#555] text-sm mb-12 font-medium max-w-[280px] mx-auto leading-relaxed text-center italic">
+            Garantizá tu versión ahora por solo $ 1.00 y viciá con el mejor fútbol del 2026.
+        </p>
+
+        <a href="https://pay.lowify.com.br/checkout.php?product_id=LP8frW" class="btn-bounce inline-flex w-full bg-[#00C853] text-black font-black py-5 rounded-3xl text-xl shadow-2xl items-center justify-center text-center uppercase tracking-tighter mb-4">
+            COMPRAR AHORA - $ 1.00
+        </a>
+
+        <p class="text-[10px] font-bold text-[#444] uppercase tracking-tight italic">
+            Pagá en tu moneda local: conversión automática al toque. <br>
+            Compra 100% segura y confiable.
+        </p>
+    </section>
+
+    <footer class="py-12 border-t border-white/5 text-center px-10">
+        <p class="text-[#333] text-[10px] font-black uppercase tracking-tight">
+            © 2026 DFL Mobile Brasil. Todos los derechos reservados.
+        </p>
+    </footer>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Pulsing animation logic for price
+        const priceElement = document.getElementById('final-price');
+        let scale = 1;
+        let growing = true;
+
+        function animatePrice() {
+            if (growing) {
+                scale += 0.002;
+                if (scale >= 1.05) growing = false;
+            } else {
+                scale -= 0.002;
+                if (scale <= 1) growing = true;
+            }
+            priceElement.style.transform = `scale(${scale})`;
+            requestAnimationFrame(animatePrice);
+        }
+        animatePrice();
+    </script>
+</body>
+</html>
